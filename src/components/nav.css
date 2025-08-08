@@ -51,23 +51,23 @@ a.active {
         border-bottom: none; 
         position: absolute;
         top: 100%;
-
     }
-
 
     .nav ul.active {
         display: flex; 
         opacity: 1;
         width: 100%;
-        top: 100%;
-        top: calc(100% + 100px);      
-        padding-left: 0;
-        padding-right: 0;
-        background-color: white;
+        top: calc(100% + 100px);  
+        right: 0;
+        /* background-color: lightgray; */
+
     }
 
     .nav ul li { 
         width: 100%; 
+        /* text-align: center; */
+
+        
     }
 
     .logo {
