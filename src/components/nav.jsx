@@ -15,26 +15,21 @@ export function Nav() {
         </div>
       )}
       
-      {!menuOpen && (
-        <div className="hamburger" onClick={() => setMenuOpen(true)}>
-          ☰
-        </div>
-      )}
       
-      {/* <div
+      <div
         className={`hamburger ${menuOpen ? 'open' : ''}`}
         onClick={() => setMenuOpen(!menuOpen)}
       >
         <span></span>
         <span></span>
         <span></span>
-      </div> */}
+      </div>
 
 
       <ul className={menuOpen ? 'active' : ''}>
-        {menuOpen && (
+        {/* {menuOpen && (
           <li className="close-btn" onClick={() => setMenuOpen(false)}>✖</li>
-        )}
+        )} */}
         <li className={active === 'home' ? 'active' : ''}>
           <a href="#home" onClick={() => setActive('home')}>Home</a>
         </li>
