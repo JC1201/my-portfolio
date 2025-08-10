@@ -9,12 +9,12 @@ export function App() {
 
   return (
     <>
-      <div>
+      <div className='navbar'>
         <Nav />
       </div>
       
-      <div>
-        <Intro />
+      <div className='intro'>
+        <Intro title={useState}/>
       </div>
 
     </>

@@ -1,5 +1,38 @@
-* {
-    color: black;
-    text-align: center;
+.intro {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    /* padding: 4rem 2rem; */
+    width: 100%; /* take up the whole width */
+    flex-wrap: wrap;
+    /* background-color: #f9f9f9; */
+    width: 100vw;         /* full viewport width */
+    height: 100vh;        /* full viewport height */
+    
 }
+
+/* .intro-desc{
+
+
+} */
+
+.intro-text {
+    flex: 1; /* make text area grow to fill space */
+    min-width: 150px; /* so it doesn’t shrink too much */
+    text-align: center; /* better for short text */
+    color: #333; /* dark text for readability */
+    width: 100%; /* ensure it takes full width */
+
+}
+
+.intro-image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
 

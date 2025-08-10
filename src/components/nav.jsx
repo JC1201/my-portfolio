@@ -5,13 +5,14 @@ export function Nav() {
 
   const [active, setActive] = useState('home');
   const [menuOpen, setMenuOpen] = useState(false);
+  
   return (
 
     <nav className="nav">
 
        {!menuOpen && (
         <div className="logo">
-          <a href="#name">My Portfolio</a>
+          <a href="#home">My Portfolio</a>
         </div>
       )}
       

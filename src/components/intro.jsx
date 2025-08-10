@@ -1,15 +1,44 @@
 import './intro.css';
+import personalPic from '../assets/personal_pic.png';
 
-export function Intro() {
+
+export function Intro({title}) {
+
+  
 
   return (
     
-    <div className="intro">
-      <h1>Welcome to My Portfolio</h1>
-      <p>This is a brief introduction about myself and my work.</p>
-      <div className="intro-content">
-        <p>Here you can find information about my projects, experience, and how to contact me.</p>
+    <section className="intro">
+      <div className="intro-image">
+        <img src={personalPic} alt="Jieh Cheng" />
       </div>
-    </div>
+
+      <div className = "intro-desc">
+          
+        <div className="intro-text">
+          <h1>
+            Hello, I'm <span>Jieh Cheng</span> 👋
+          </h1>
+          <p>
+            I'm a passionate full-stack developer 
+            
+          </p>
+          {/* <p>
+            with a love for building clean,
+            modern web applications. Skilled in Python, Java, and front-end
+            development 
+          </p> */}
+          {/* <p>
+            I’m currently exploring opportunities to create impactful
+            software solutions.
+          </p> */}
+          <a href="#contact" className="intro-button">
+            Contact Me
+          </a>
+        </div>
+        
+      </div>
+
+    </section>
   );
 }
