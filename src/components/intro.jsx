@@ -21,24 +21,54 @@ export function Intro({title}) {
           </h1>
           <p>
             I'm a passionate full-stack developer 
-            
           </p>
-          {/* <p>
-            with a love for building clean,
-            modern web applications. Skilled in Python, Java, and front-end
-            development 
-          </p> */}
-          {/* <p>
-            I’m currently exploring opportunities to create impactful
-            software solutions.
-          </p> */}
-          <a href="#contact" className="intro-button">
+          <a href="#contact" className="{active === 'contact' ? 'active' : ''}">
             Contact Me
           </a>
         </div>
         
       </div>
 
+      <div className="about">
+        <h2>About Me</h2>
+
+
+        <div className="about-cards">
+          <div className="about-card">
+            <span className="icon">🏆</span>
+            <h3>Experience</h3>
+            <p>N/A</p>
+            <small>Fullstack Development</small>
+          </div>
+
+        
+          <div className="about-card">
+            <span className="icon">🎓</span>
+            <h3>Education</h3>
+            <p>B.Sc. Bachelors Degree</p>
+            <small>M.Sc. Masters Degree</small>
+          </div>
+        </div>
+
+        <div className="about-content"> 
+          <p>
+            I am a full-stack developer with a passion for creating dynamic and
+            responsive web applications. My journey in software development has
+            equipped me with a diverse skill set, including expertise in Python,
+            Java, and front-end technologies.
+          </p>
+          <p>
+            I thrive on challenges and enjoy learning new technologies to enhance
+            my projects. My goal is to build software that not only meets user
+            needs but also provides an exceptional user experience.
+          </p>
+          <p>
+            When I'm not coding, I love exploring new tech trends, contributing to
+            open-source projects, and sharing knowledge with the developer
+            community.
+          </p>
+        </div>
+      </div>
     </section>
   );
 }
