@@ -1,8 +1,7 @@
 import './skill.css';
 
 
-export function About() {
-
+export function Skill() {
 
   return (
 
