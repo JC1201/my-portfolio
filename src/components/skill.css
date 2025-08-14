@@ -1,16 +1,50 @@
 .skills {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    background-color: #f0f0f0; /* light background for contrast */
-    color: black;
-    
+    background-color: #f0f0f0;
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
 }
 
-/* .skills h2, 
-.skills .skill {
-    text-align: center;
-    width: 100%;
-} */
+.skills h2 {
+    margin-bottom: 1.5rem;
+    color: black;
+}
+
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 1.5rem; /* space between items */
+    max-width: 800px; /* control width */
+    margin: 0 auto; /* center the grid */
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: white;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.skill img {
+    width: 30px;
+    height: 30px;
+}
+
+.level {
+    margin-left: auto;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Make it 1 column on mobile */
+@media (max-width: 600px) {
+    .skill-list {
+
+        grid-template-columns: 1fr;
+        margin: 0 1rem; /* center the grid */
+
+    }
+}

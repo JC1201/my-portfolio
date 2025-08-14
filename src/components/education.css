@@ -1,0 +1,62 @@
+.education {
+  background-color: #fff;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.education h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: black;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #ddd; /* vertical line */
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 12px;
+  width: 16px;
+  height: 16px;
+  background: #4CAF50;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.timeline-content {
+  background: #f9f9f9;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.timeline-content h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.timeline-content span {
+  display: block;
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
