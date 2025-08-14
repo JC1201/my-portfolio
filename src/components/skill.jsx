@@ -12,6 +12,7 @@ export function Skill() {
             <span class="level">Intermediate</span>
         </div>
         <div class="skill">
+            <img src="" alt="" />
             <span>HTML</span>
             <span class="level">Advanced</span>
         </div>  
