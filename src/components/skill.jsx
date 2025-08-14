@@ -13,43 +13,43 @@ export function Skill() {
 
   return (
 
-    <section class="skills">
+    <section className="skills">
         <h2>Skills</h2>
         <div className="skill-list">
-        <div class="skill">
+        <div className="skill">
             <img src={pythonIcon} alt="python"/>
             <span>Python</span>
-            <span class="level">Advanced</span>
+            <span className="level">Advanced</span>
         </div>
-        <div class="skill">
+        <div className="skill">
             <img src={javaIcon} alt="java" />
             <span>Java</span>
-            <span class="level">Advacned</span>
+            <span className="level">Advacned</span>
         </div>
-        <div class="skill">
+        <div className="skill">
             <img src={htmlIcon} alt="html" />
             <span>HTML</span>
-            <span class="level">Intermediate</span>
+            <span className="level">Intermediate</span>
         </div>  
-        <div class="skill">
+        <div className="skill">
             <img src={cssIcon} alt="css" />
             <span>CSS</span>
-            <span class="level">Intermediate</span>
+            <span className="level">Intermediate</span>
         </div>
-        <div class="skill">
+        <div className="skill">
             <img src={javascriptIcon} alt="javascript" />
             <span>JavaScript</span>
-            <span class="level">Intermediate</span>
+            <span className="level">Intermediate</span>
         </div>
-        <div class="skill">
+        <div className="skill">
             <img src={tensorflowIcon} alt="tensorflow" />
             <span>TensorFlow</span>
-            <span class="level">Intermediate</span>
+            <span className="level">Intermediate</span>
         </div>
-        <div class="skill">
+        <div className="skill">
             <img src={reactIcon} alt="react" />
             <span>React</span>
-            <span class="level">Beginner</span>
+            <span className="level">Beginner</span>
         </div>
         </div>
     </section>

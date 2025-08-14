@@ -44,7 +44,7 @@
     .skill-list {
 
         grid-template-columns: 1fr;
-        margin: 0 1rem; /* center the grid */
+        margin: 0 1rem; 
 
     }
 }

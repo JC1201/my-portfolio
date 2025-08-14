@@ -5,7 +5,8 @@ import './app.css'
 import { Nav } from './components/nav.jsx';
 import { Intro } from './components/intro.jsx';
 import { Skill } from './components/skill.jsx';
-
+import { Education } from './components/education.jsx';
+import { Contact } from './components/contact.jsx';
 
 export function App() {
 
@@ -15,7 +16,6 @@ export function App() {
         <Nav />
       </div>
       
-      <div>
       <div className='intro'>
         <Intro title={useState}/>
       </div>
@@ -23,7 +23,14 @@ export function App() {
       <div className='skill'>
         <Skill />
       </div>
-      </div> 
+
+      <div  className='education'>
+        <Education />
+      </div>
+
+      <div className='contact'>
+        <Contact />
+      </div>
 
     </>
   )

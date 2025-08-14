@@ -3,33 +3,29 @@ import './education.css';
 export function Education() {
 
     return(
+        <section className="timeline">
+            <h2>Education</h2>
 
-    <section className="education">
-        
-        <h2>Education</h2>
+            <div className="timeline-item">
+                <h3>2016 - 2018</h3>
+                <p>High School Diploma</p>
+            </div>
 
-        <div className="timeline">
-        
-        <div className="timeline-item">
-        <div className="timeline-dot"></div>
-        <div className="timeline-content">
-            <h3>Bachelor of Computer Science</h3>
-            <span>University of XYZ • 2018 – 2022</span>
-            <p>Specialized in software engineering, full-stack development, and AI.</p>
-        </div>
-        </div>
+            <div className="timeline-item">
+                <h3>2018 - 2020</h3>
+                <p>Foundation in Science</p>
+            </div>
 
-        <div className="timeline-item">
-        <div className="timeline-dot"></div>
-        <div className="timeline-content">
-            <h3>High School Diploma</h3>
-            <span>ABC High School • 2016 – 2018</span>
-            <p>Focused on science stream, with strong interest in mathematics and programming.</p>
-        </div>
-        </div>
+            <div className="timeline-item">
+                <h3>2020 - 2023</h3>
+                <p>Bachelor's Degree in Computer Science</p>
+            </div>
 
-        </div>
-    </section>
+            <div className="timeline-item">
+                <h3>2023 - Present</h3>
+                <p>Master's Degree in AI</p>
+            </div>
+        </section>
 
     );
 }

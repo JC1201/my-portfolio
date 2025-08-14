@@ -1,62 +1,59 @@
-.education {
-  background-color: #fff;
-  width: 100%;
-  padding: 2rem 0;
-}
-
-.education h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-  color: black;
-}
-
 .timeline {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-  padding-left: 2rem;
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    color: black;
 }
 
+.timeline h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* Vertical center line */
 .timeline::before {
-  content: "";
-  position: absolute;
-  left: 20px;
-  top: 0;
-  width: 4px;
-  height: 100%;
-  background: #ddd; /* vertical line */
+    content: '';
+    position: absolute;
+    top: 13%;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background: #ccc;
+    transform: translateX(-50%);
 }
 
+/* Common item style */
 .timeline-item {
-  position: relative;
-  margin-bottom: 2rem;
+    position: relative;
+    width: 45%;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
 }
 
-.timeline-dot {
-  position: absolute;
-  left: 12px;
-  width: 16px;
-  height: 16px;
-  background: #4CAF50;
-  border-radius: 50%;
-  border: 2px solid white;
+/* Odd items → left */
+.timeline-item:nth-child(odd) {
+    left: -2%;
 }
 
-.timeline-content {
-  background: #f9f9f9;
-  padding: 1rem 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+/* Even items → right */
+.timeline-item:nth-child(even) {
+    left: 53%;
 }
 
-.timeline-content h3 {
-  margin: 0;
-  font-size: 1.2rem;
-}
+/* Make it responsive for small screens */
+@media (max-width: 600px) {
+  .timeline::before {
+        left: 8px;
+  }
 
-.timeline-content span {
-  display: block;
-  font-size: 0.9rem;
-  color: #777;
-  margin-bottom: 0.5rem;
+  .timeline-item {
+        width: 100%;
+        left: 0 !important;
+        margin-left: 20px;
+  }
 }
