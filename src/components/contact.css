@@ -3,6 +3,7 @@
   max-width: 800px;
   margin: 0 auto;
   color: black;
+
 }
 
 .contact h2 {
@@ -34,7 +35,7 @@ textarea {
 }
 
 button {
-  background-color: #0077cc;
+  background-color: grey;
   color: white;
   padding: 0.8rem;
   border: none;
@@ -43,5 +44,12 @@ button {
 }
 
 button:hover {
-  background-color: #005fa3;
+  background-color: black;
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-top: 0.3rem;
 }

@@ -22,9 +22,13 @@ a {
     font-size: 1.2em;
 }
 
-a.active {
+/* a.active {
     color: grey;
     background-color: white;
+} */
+
+a:hover {
+    color: grey;
 }
 
 .hamburger {
@@ -34,87 +38,89 @@ a.active {
 
 @media (max-width: 768px) {
 
-    .nav {
+.nav {
 
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        top: 1.2rem;
-        /* background-color: white;  */
-        width: 100%;
-        position: absolute;
-    }
+    /* flex-direction: row;
+    justify-content: space-between; */
+    position: absolute;
+    /* top: 1.2rem; */
+    width: 100%;
+}
 
-    .nav ul {
-        flex-direction: column;
-        gap: 0.3rem;
-        display: none;
-        border-bottom: none; 
-        position: absolute;
-        background-color: white;
-    }
+.nav ul {
+    flex-direction: column;
+    gap: 0.3rem;
+    display: none;
+    border-bottom: none; 
+    position: absolute;
+    background-color: white;
+}
 
-    .nav ul.active {
-        display: flex; 
-        opacity: 1;
-        width: 100%;
-        right: 0; /* align the close button to the right */
+.nav ul.active {
+    display: flex; 
+    opacity: 1;
+    width: 100%;
+    right: 0; /* align the close button to the right */
 
-        /* fill the whole hamburger menu after open without any transparency between nav */
-        padding-top: 5rem;
-        top: calc(100% + 50px);  
+    /* fill the whole hamburger menu after open without any transparency between nav */
+    padding-top: 5rem;
+    top: calc(100% + 50px);  
 
-    }
+}
 
-    .nav ul li { 
-        width: 100%; 
-    }
+.nav ul li { 
+    width: 100%; 
+}
 
-    .logo {
-        margin-left: 2rem;
-    }
+.logo {
+    position: absolute;
+    margin-left: 2rem;
+    left: 0;
+    top: 2rem;
+}
 
-    .hamburger {
-        position:absolute;
-        display: block;
-        cursor: pointer;
-        font-size: 1.5rem;
-        margin-right: 2rem;
-        right: 0;
+.hamburger {
+    position:absolute;
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    right: 0;
+    top: 2rem;
 
-    }
+}
 
-    .hamburger span{
+.hamburger span{
 
-        display: block;
-        width: 30px;
-        height: 4px;
-        background-color: black;
-        margin: 5px;
-        transition: all 0.3s ease-in-out;
-          
-    }
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+        
+}
 
-    .hamburger.open {
-        top: 50%; 
-        cursor: pointer;
-        /* margin-left: 23rem; */
-    }     
+.hamburger.open {
+    top: 2rem; 
+    cursor: pointer;
+    /* margin-left: 23rem; */
+}     
 
-    .hamburger.open span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 7.5px);
+.hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 7.5px);
 
-    }
+}
 
-    .hamburger.open span:nth-child(2) {
-        opacity: 0;
-    }
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
 
-    .hamburger.open span:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -7.5px);
+.hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -7.5px);
 
-    }
+}
 
-  
+
 }
 
