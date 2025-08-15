@@ -50,17 +50,19 @@
 
 .timeline {
     max-width: 768px;
-
 }
 
 .timeline::before {
-        left: 8px;
+    left: 8px;
 }
 
 .timeline-item {
-        width: 100%;
-        left: 0 !important;
-        margin-left: 20px;
-        margin-right: 0;
+    width: calc(100% - 70px); /* so it fits even with padding */
+    max-width: 100%; 
+    left: 0 !important;
+    margin-left: 20px;
+
 }
+
+
 }
