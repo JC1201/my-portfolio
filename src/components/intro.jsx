@@ -20,7 +20,7 @@ export function Intro({title}) {
             Hello, I'm <span>Jieh Cheng</span> 👋
           </h1>
           <p>
-            I'm a passionate full-stack developer 
+            I'm a passionate graduated Computer Science student from Malaysia 🇲🇾
           </p>
           <a href="#contact" className="{active === 'contact' ? 'active' : ''}">
             Contact Me
@@ -52,10 +52,14 @@ export function Intro({title}) {
 
         <div className="about-content"> 
           <p>
-            I am a full-stack developer with a passion for creating dynamic and
-            responsive web applications. My journey in software development has
-            equipped me with a diverse skill set, including expertise in Python,
-            Java, and front-end technologies.
+
+          I am a recent Computer Science graduate with a strong foundation in programming and web technologies, 
+          aspiring to grow into a skilled full-stack developer. While I may lack extensive industry experience, 
+          I bring enthusiasm, adaptability, and a strong willingness to learn. 
+          I am eager to apply my academic knowledge in real-world projects, continuously improve my technical skills, 
+          and contribute to a collaborative development team. 
+          Currently seeking job opportunities where I can gain hands-on experience, 
+          learn from experienced professionals, and make a meaningful impact.
           </p>
           <p>
             I thrive on challenges and enjoy learning new technologies to enhance

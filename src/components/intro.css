@@ -78,10 +78,18 @@
     
 }
 
+.about-content {
+    max-width: 600px;
+    margin: 0 auto; /* center the content */
+    border: #333 solid 1px;
+    border-radius: 10px;
+}
+
 .about p {
     font-size: 1.1rem;
     color: #555;
     margin-bottom: 1rem;
+
 }
 
 
