@@ -5,7 +5,7 @@ import './app.css'
 import { Nav } from './components/nav.jsx';
 import { Intro } from './components/intro.jsx';
 import { Skill } from './components/skill.jsx';
-import { Education } from './components/education.jsx';
+import { Experience } from './components/experience.jsx';
 import { Contact } from './components/contact.jsx';
 
 export function App() {
@@ -25,7 +25,7 @@ export function App() {
       </div>
 
       <div  className='education'>
-        <Education />
+        <Experience />
       </div>
 
       <div className='contact'>

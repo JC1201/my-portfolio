@@ -54,7 +54,7 @@ export function Contact() {
     <section className="contact">
       <h2>Contact Me</h2>
       <form
-        action="https://formspree.io/f/xnnzrbyg" // replace with your Formspree ID
+        action="https://formspree.io/f/xnnzrbyg" 
         method="POST"
         className="contact-form"
         onSubmit={handleSubmit}

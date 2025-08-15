@@ -1,13 +1,14 @@
-import './education.css';
+import './experience.css';
 
-export function Education() {
+export function Experience() {
 
     return(
         <section className="timeline">
-            <h2>Education</h2>
+            <h2>Experience</h2>
 
             <div className="timeline-item">
-                <h3>2016 - 2018</h3>
+                <h3>2016 - 2020</h3>
+                <p> Chong Hwa Independent High School </p>
                 <p>High School Diploma</p>
             </div>
 
