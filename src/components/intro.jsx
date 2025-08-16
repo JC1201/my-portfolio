@@ -1,11 +1,10 @@
 import './intro.css';
 import personalPic from '../assets/personal_pic.png';
-
+import view1 from '../assets/view_pic1.jpg';
 
 export function Intro({title}) {
 
   
-
   return (
     
     <section className="intro">
@@ -34,20 +33,25 @@ export function Intro({title}) {
 
 
         <div className="about-cards">
+
           <div className="about-card">
+            <img src={view1} alt="view" />
+          </div>
+          
+          {/* <div className="about-card">
             <span className="icon">🏆</span>
             <h3>Experience</h3>
             <p>N/A</p>
             <small>Fullstack Development</small>
-          </div>
+          </div> */}
 
         
-          <div className="about-card">
+          {/* <div className="about-card">
             <span className="icon">🎓</span>
             <h3>Education</h3>
             <p>B.Sc. Bachelors Degree</p>
-            <small>M.Sc. Masters Degree</small>
-          </div>
+          </div> */}
+          
         </div>
 
         <div className="about-content"> 
