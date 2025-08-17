@@ -7,7 +7,7 @@ export function About() {
   
   return (
 
-    <section className="intro">
+    <section className="abouts">
         <div className="about">
             <h2>About Me</h2>
 

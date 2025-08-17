@@ -22,21 +22,21 @@ export function App() {
         <Intro title={useState}/>
       </div>
 
-      <div className='about'>
-        <About />
-      </div>
-
       <div className='skill'>
         <Skill />
       </div>
 
-      <div  className='education'>
-        <Experience />
-      </div>
+      {/* <div className='about'>
+        <About />
+      </div> */}
 
-      <div className='contact'>
+      {/* <div  className='experience'>
+        <Experience />
+      </div> */}
+
+      {/* <div className='contact'>
         <Contact />
-      </div>
+      </div> */}
 
     </>
   )
