@@ -14,7 +14,7 @@ export function Skill() {
   return (
 
     <section className="skills">
-        <h2>Skills</h2>
+        <h2>Tech Stack</h2>
         <div className="skill-list">
         <div className="skill">
             <img src={pythonIcon} alt="python"/>

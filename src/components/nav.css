@@ -5,7 +5,9 @@
     align-items: center;
     text-align: center;
     position: absolute;
-    top: 0.1rem;
+    top: 0;
+    z-index: 1000;
+
 }
 
 /* * {
@@ -56,7 +58,8 @@ a:hover {
 
 .nav {
     width: 100%;
-    position: relative;
+    position: absolute;
+    top: 0;
 }
 
 /* Make menu full-screen */

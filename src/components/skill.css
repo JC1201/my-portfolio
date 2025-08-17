@@ -1,41 +1,49 @@
 .skills {
     position: absolute;
-    left: 0;
+    width: 100%;          
+    display: flex;
+    align-items: center;     
+    justify-content: center;  
+    /* padding: 2rem 1rem; */
+    margin-top: 1rem;
+    
 }
 
 .skills h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    font-size: 1rem;
     color: black;
+    padding-right: 2rem;
+
 }
 
 /* Horizontal Skill List */
 .skill-list {
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: center; /* center the row */
     align-items: center;
     gap: 1rem; /* space between cards */
-
 }
 
 /* Skill Card */
 .skill {
-    position: relative;
-    display: flex;
-    flex-direction: column; /* icon on top, text below */
-    align-items: center;
+    /* position: relative; */
+    /* display: flex; */
+    /* flex-direction: column;  */
+    /* icon on top, text below */
+    /* align-items: center; */
     /* background-color: #f0f0f0; */
-    padding: 0.5rem 1rem;
-    /* border-radius: 10px; */
-    width: 50px;
+    justify-content: center;
+    padding: 0.5rem 0.5rem;
+    border-radius: 10px;
+    width: 30px;
     cursor: pointer;
     transition: transform 0.3s, background-color 0.3s;
 }
 
 .skill img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 0.5rem;
+    width: 30px;
+    height: 30px;
 }
 
 .skill span {
@@ -51,21 +59,21 @@
     bottom: 110%; /* above the card */
     left: 50%;
     transform: translateX(-50%);
-    background-color: #333;
-    color: #fff;
+    background-color: lightgray;
+    color: #000;
     font-size: 0.8rem;
     padding: 0.3rem 0.6rem;
     border-radius: 5px;
     opacity: 0;
-    pointer-events: none;
-    white-space: nowrap;
+    /* pointer-events: none;
+    white-space: nowrap; */
     transition: opacity 0.3s;
     z-index: 10;
 }
 
 .skill:hover {
     transform: translateY(-5px);
-    background-color: #333;
+    background-color: lightgrey;
     color: #fff;
     border-radius: 10px;
 }
@@ -74,9 +82,9 @@
     opacity: 1;
 }
 
-.skill h2:hover .level {
+/* .skill h2:hover .level {
     opacity: 0;
-}
+} */
 
 /* Tablet */
 @media (max-width: 1024px) and (min-width: 601px) {

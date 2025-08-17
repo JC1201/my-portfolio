@@ -22,7 +22,7 @@ export function App() {
         <Intro title={useState}/>
       </div>
 
-      <div className='skill'>
+      <div className='skills'>
         <Skill />
       </div>
 

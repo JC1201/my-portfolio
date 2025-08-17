@@ -1,13 +1,16 @@
 .intro {
 
     position: absolute;
+    /* max-width: 1200px; */
+
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
     width: 100%; /* take up the whole width */
-    top: 4rem;
-    
+    top: 3rem;
+  
+
     
 }
 
@@ -22,7 +25,6 @@
 .about-card img {
     width: 100%; /* full width image on mobile */
     height: 100%; /* maintain aspect ratio */
-
     padding: 0;
     margin: 0;
     object-fit: cover;
@@ -63,7 +65,9 @@
 @media (max-width: 600px) {
 
     .intro {
-        align-items: center; /* center items */
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
         justify-content: center;
         width: 100%; /* full width on mobile */
         gap: 0.5rem; /* smaller gap on mobile */
