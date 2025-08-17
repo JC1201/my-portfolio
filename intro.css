@@ -4,10 +4,10 @@
     align-items: center;
     gap: 2rem;
     width: 100%;
-    min-height: 100vh; /* Full viewport height */
-    padding: 2rem; /* Add some padding instead of padding-top */
+    min-height: calc(100vh - 80px); /* Account for nav bar height */
+    padding: 6rem 2rem 2rem 2rem; /* Top padding to account for nav bar */
     position: relative;
-    z-index: 999;
+    z-index: 998; /* Below nav bar */
     box-sizing: border-box; /* Include padding in height calculation */
 }
 
@@ -86,8 +86,8 @@
         justify-content: center;
         width: 100%; /* full width on mobile */
         gap: 1rem; /* smaller gap on mobile */
-        padding: 1rem; /* Smaller padding on mobile */
-        min-height: 100vh; /* Maintain full height on mobile */
+        padding: 5rem 1rem 1rem 1rem; /* Account for mobile nav bar */
+        min-height: calc(100vh - 80px); /* Account for mobile nav */
     }
     
     .intro-text {
