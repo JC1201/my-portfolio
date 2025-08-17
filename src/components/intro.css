@@ -20,6 +20,15 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+.about-card img {
+    width: 100%; /* full width image on mobile */
+    height: 100%; /* maintain aspect ratio */
+
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+}
+
 .intro-text {
     text-align: center; 
     color: #333; /* dark text for readability */
@@ -72,9 +81,11 @@
 }
 
 .about-card{
-    border: #333 solid 2px;
+    border: white solid 2px;
     border-radius: 10px;
     /* padding: 1.5rem; */
+    height: 300px;
+    width: 100%; 
     
 }
 
@@ -141,12 +152,14 @@
     }
 
     .about-card {
-        /* height: auto; */
+        height: 300px;
+        width: 100%; 
     }
     
     .about-card img {
         width: 100%; /* full width image on mobile */
         height: 100%; /* maintain aspect ratio */
+
         padding: 0;
         margin: 0;
         object-fit: cover;
