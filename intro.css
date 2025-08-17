@@ -1,0 +1,124 @@
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    min-height: 100vh; /* Full viewport height */
+    padding: 2rem; /* Add some padding instead of padding-top */
+    position: relative;
+    z-index: 999;
+    box-sizing: border-box; /* Include padding in height calculation */
+}
+
+.intro-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.intro-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro-text {
+    text-align: center; 
+    color: #333; /* dark text for readability */
+    margin-bottom: 1rem;
+}
+
+.intro-text h1 {
+    margin-bottom: 1rem;
+}
+
+.intro-text p {
+    margin-bottom: 2rem;
+}
+
+.intro a {
+    display: inline-block;
+    border: #333 solid 2px;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.intro a:hover {
+    background-color: #333;
+    color: white;
+}
+
+.about-card img {
+    width: 100%; /* full width image on mobile */
+    height: 100%; /* maintain aspect ratio */
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) and (min-width: 601px) {
+    .intro {
+        flex-direction: column; /* stack items vertically */
+        align-items: center; /* center items */
+        gap: 1.5rem;
+    }
+    
+    .intro-image img {
+        width: 200px; /* smaller image on tablet */
+        height: 200px;
+    }
+
+    .about {
+        max-width: 600px; /* adjust width for tablet */
+    }
+}
+
+@media (max-width: 600px) {
+    .intro {
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        width: 100%; /* full width on mobile */
+        gap: 1rem; /* smaller gap on mobile */
+        padding: 1rem; /* Smaller padding on mobile */
+        min-height: 100vh; /* Maintain full height on mobile */
+    }
+    
+    .intro-text {
+        text-align: center; /* center text on smaller screens */
+    }
+
+    .intro-text h1 {
+        font-size: 2.3rem; 
+        /* smaller heading on mobile */
+    }
+
+    .intro-image img {
+        width: 200px; /* smaller image on mobile */
+        height: 200px;
+    }
+
+    .about {
+        max-width: 500px;
+        gap: 0.5rem; /* smaller gap on mobile */
+    }
+
+    .about-card {
+        height: 300px;
+        width: 100%; 
+    }
+    
+    .about-card img {
+        width: 100%; /* full width image on mobile */
+        height: 100%; /* maintain aspect ratio */
+        padding: 0;
+        margin: 0;
+        object-fit: cover;
+    }
+}
