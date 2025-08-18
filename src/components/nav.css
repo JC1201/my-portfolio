@@ -1,24 +1,26 @@
-.nav{
+/* ---------- Default (Desktop) ---------- */
+.nav {
     display: flex;
-    width:100%;
+    width: 100%;
+    height: 60px;
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    position: absolute;
+    position: fixed; /* stick to top */
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
-
+    background-color: white; /* optional: so text doesn't overlap intro */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* subtle shadow */
 }
-
-/* * {
-  outline: 1px solid red; 
-} */
 
 .nav ul {
     list-style-type: none;
     display: flex;
     gap: 3rem;
-    margin-left: 1rem;
+    margin: 0;
+    padding: 0;
 }
 
 a { 
@@ -36,12 +38,12 @@ a:hover {
     display: none;
 }
 
-/* ---------- Tablet View (600px – 1024px) ---------- */
+
+/* ---------- Tablet View (600px–1024px) ---------- */
 @media (max-width: 1024px) and (min-width: 601px) {
     .nav {
         justify-content: space-between;
         padding: 0 2rem;
-        position: relative;
     }
 
     .nav ul {
@@ -53,19 +55,17 @@ a:hover {
     }
 }
 
+
 /* ---------- Mobile View (<600px) ---------- */
 @media (max-width: 600px) {
 
 .nav {
-    width: 100%;
-    position: absolute;
-    top: 0;
+    /* padding: 0 1rem; */
+    justify-content: space-between;
 }
 
-/* Make menu full-screen */
 .nav ul {
     position: fixed;
-    /* fixed covers full viewport */
     top: 0;
     left: 0;
     right: 0;
@@ -73,56 +73,51 @@ a:hover {
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 100%; /* full height */
+    height: 100%;
     flex-direction: column;
-    gap: 2rem; /* space between items */
+    gap: 2rem;
     display: none;
     background-color: white;
-    justify-content: center; /* vertical center */
-    align-items: center;     /* horizontal center */
-    z-index: 999; 
-    /* above everything */
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
 }
 
-/* Show menu when active */
 .nav ul.active {
     display: flex;
 }
 
-/* Center each menu item */
 .nav ul li { 
     width: 100%; 
-    margin: 0;
-    padding: 0;
-    
     text-align: center;
     font-size: 1.5em;
 }
 
-/* Keep logo and hamburger on top */
 .logo {
-    position: absolute;
-    top: 2rem;
-    left: 2.5rem;
+    font-weight: bold; 
+    margin-left: 2rem;
 }
 
 .hamburger { 
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
     display: block;
     cursor: pointer;
     font-size: 1.5rem;
-    z-index: 1000; /* above menu */
+    z-index: 1000;
+    right: 0;
+    margin-right: 2rem;
 }
 
-.hamburger span{
+.hamburger span {
     display: block;
     width: 30px;
     height: 4px;
     background-color: black;
     margin: 5px;
     transition: all 0.3s ease-in-out;
+}
+
+.hamburger.open{
+    position: inherit;
 }
 
 /* Hamburger animation when open */
@@ -137,5 +132,4 @@ a:hover {
 .hamburger.open span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -7.5px);
 }
-
 }

@@ -7,6 +7,8 @@ export function Intro({title}) {
   return (
     
     <section className="intro">
+
+      <div className='intro-content'>
       <div className="intro-image">
         <img src={personalPic} alt="Jieh Cheng" />
       </div>
@@ -20,12 +22,16 @@ export function Intro({title}) {
           <p>
             I'm a passionate graduated Computer Science student from Malaysia 🇲🇾
           </p>
-          <a href="#contact" className="{active === 'contact' ? 'active' : ''}">
+          <a href="#contact" className={active === 'contact' ? 'active' : ''}>
             Contact Me
           </a>
         </div>
-        
+
       </div>
+
+      </div>
+
+      
 
     </section>
   );

@@ -1,11 +1,15 @@
 .skills {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;          
     display: flex;
     align-items: center;     
     justify-content: center;  
     /* padding: 2rem 1rem; */
+    
     margin-top: 1rem;
+    /* min-width: 1200px;    */
+    /* keeps it from stretching edge-to-edge */
+
     
 }
 
@@ -23,6 +27,7 @@
     justify-content: center; /* center the row */
     align-items: center;
     gap: 1rem; /* space between cards */
+    
 }
 
 /* Skill Card */

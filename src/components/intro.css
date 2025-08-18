@@ -1,17 +1,15 @@
 .intro {
 
-    position: absolute;
-    /* max-width: 1200px; */
-
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    width: 100%; /* take up the whole width */
-    top: 3rem;
-  
 
-    
+}
+
+.intro-content {
+    width: 80%;          /* or whatever fits your design */
+    margin: 0 auto;      /* horizontally center */
+    display: flex;       /* for image + text side by side */
+    gap: 2rem;           /* optional spacing between columns */
+    align-items: center; /* vertically align image + text */
 }
 
 .intro-image img {

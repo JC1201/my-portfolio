@@ -1,14 +1,15 @@
 .abouts {
-    position: relative;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    /* position: absolute; */
+    /* justify-content: center; */
+    margin: auto auto;
+    max-width: 880px;
 }
 
 .about {
-    position: absolute;
-    padding-top: 2rem;
+    /* position: absolute; */
+    /* padding-top: 2rem; */
     text-align: center;
+
     line-height: 1.6;
     color: black;
     max-width: 880px;
@@ -18,8 +19,7 @@
     font-size: 2.2rem;
     margin-bottom: 1rem;
     color: #333;
-    position: relative;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .about h2::after {
@@ -29,18 +29,15 @@
     height: 4px;
     background: #4a90e2;
     margin: 0.3rem auto 1.5rem;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
-
-
 .about-cards {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: center; */
     /* justify-content: space-around; */
-    gap: 1rem;
-
+    /* gap: 1rem; */
 }
 
 .about-card{
