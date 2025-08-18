@@ -1,3 +1,5 @@
+
+export default Intro;
 import './intro.css';
 import personalPic from '../assets/personal_pic.png';
 
