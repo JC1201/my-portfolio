@@ -1,6 +1,8 @@
 import './contact.css';
 import React, { useState } from "react";
 import Spline from '@splinetool/react-spline';
+// import Spline from '@splinetool/react-spline/next';
+
 
 
 export function Contact() {
@@ -105,11 +107,16 @@ export function Contact() {
           <button type="submit">Send</button>
         </form>
 
-        {/* <div style={{ width: "600px", height: "400px" }}>
-          <Spline scene="https://app.spline.design/community/file/08ac75fd-8db2-40aa-a92a-d4612b128bfb" />
-        </div> */}
+        <div style={{ width: "600px", height: "400px" }}>
+          <Spline
+            scene="https://prod.spline.design/f8jbXbWHeiEyWWnC/scene.splinecode" 
+          />
+        </div>
+
+
 
       </div>
+      
 
     </section>
   );
