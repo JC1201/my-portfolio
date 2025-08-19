@@ -1,9 +1,7 @@
-
-export default Intro;
 import './intro.css';
-import personalPic from '../assets/personal_pic.png';
+import personalPic from '../../assets/personal_pic.png';
 
-export function Intro({title}) {
+export function Intro() {
 
   
   return (
@@ -24,9 +22,8 @@ export function Intro({title}) {
           <p>
             I'm a passionate graduated Computer Science student from Malaysia 🇲🇾
           </p>
-          <a href="#contact" className={active === 'contact' ? 'active' : ''}>
-            Contact Me
-          </a>
+             <a href="#contact" onClick={() => setActive('contact')}>Contact Me</a>
+
         </div>
 
       </div>

@@ -1,29 +1,33 @@
-import { useState } from 'preact/hooks'
-import preactLogo from './assets/preact.svg'
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './app.css'
-// import { Nav } from './components/nav.jsx';
-import { Navbar } from './components/nav.jsx';
-import { Intro } from './components/intro.jsx';
-import { About } from './components/about.jsx';
-import { Skill } from './components/skill.jsx';
-import { Experience } from './components/experience.jsx';
-import { Contact } from './components/contact.jsx';
+import './App.css'
+import { Nav } from './components/nav/nav.jsx';
+import {Intro} from  './components/intro/intro.jsx';
+import {Skill} from  './components/skill/skill.jsx';
+import {About} from  './components/about/about.jsx';
+import {Experience} from  './components/experience/experience.jsx';
+import {Contact} from  './components/contact/contact.jsx';
 
 
-export function App() {
+
+function App() {
+  const [count, setCount] = useState(0)
 
   return (
     <>
-      <Navbar />
 
-      <Intro title="Welcome" />
-
-      <Skill />
-
-      <About />
-
-      <Contact/>
+    <Nav/>
+    <Intro/>
+    <Skill/>
+    <About/>
+    <Experience/>
+    <Contact/>
+    
+    
     </>
+
   )
 }
+
+export default App;

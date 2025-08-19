@@ -1,0 +1,81 @@
+.about {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.abouts h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #333;
+}
+
+.abouts h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #4a90e2;
+    margin: 0.3rem auto 1.5rem;
+    border-radius: 3px;
+}
+
+/* About card */
+.about-card {
+    position: relative;
+    border: white solid 0px;
+    border-radius: 20px;
+    max-width: 300px;
+    width: 100%;         /* full width */
+    margin: 2.5rem auto;   /* center horizontally */
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Overlay text */
+.about-card .cover {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: transparent;
+    /* color: white; */
+    z-index: 1;
+}
+
+/* Animated photo */
+.about-card img,
+.about-card .photo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    object-fit: cover;
+    image-rendering: auto;
+    border-radius: 20px;
+
+}
+
+.about-content {
+
+    max-width: 900px;
+    margin: 1.5rem auto; /* center the content */
+    border-radius: 10px;
+
+}
+
+.about p {
+    max-width: 500px;
+    max-height: max-content;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,17 +1,10 @@
-.intro {
-
-    display: flex ;
-    min-height: 100vh; /* full viewport height */
-
-
-}
-
 .intro-content {
-    width: 80%;          /* or whatever fits your design */
-    margin: 0 auto;      /* horizontally center */
+
+    margin: 0 auto;/* horizontally center */
     display: flex;       /* for image + text side by side */
     gap: 2rem;           /* optional spacing between columns */
     align-items: center; /* vertically align image + text */
+    padding-top: 6rem;    
 }
 
 .intro-image img {
