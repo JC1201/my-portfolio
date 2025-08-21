@@ -2,37 +2,42 @@ import './about.css';
 import view1 from '../../assets/view_pic1.jpg';
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { PixelReveal } from "./pixelreveal.jsx";
+
 
 export function About() {
   const [showPic, setShowPic] = useState(false);
+  const [loaded, setLoaded] = useState(false);
 
   return (
     <section className="abouts">
-        <h2>About Me</h2>
+      <h2>About Me</h2>
 
       <div className="about">
-
-        {/* Clickable photo card */}
         <div className="about-card" onClick={() => setShowPic(!showPic)}>
-          {/* Always visible description overlay */}
-          <div className="cover">
-            <h4>{showPic ? "" : "Click to reveal my favorite picture !"}</h4>
-            {/* <p>Click the image to reveal me!</p> */}
-          </div>
+          
+          {/* ✅ Cover always exists, just fades */}
+          <motion.div
+            className="cover"
+            animate={{ opacity: showPic ? 0 : 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <h4>Click to reveal my favorite picture !</h4>
+          </motion.div>
 
-          {/* Animate picture */}
-          <AnimatePresence>
+          {/* ✅ Picture with enter/exit animation */}
+          <AnimatePresence mode="wait">
             {showPic && (
-              <motion.img
-                key="photo"
-                src={view1}
-                alt="view"
+              <motion.div
+                key="pic"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.5 }}
                 className="photo"
-                initial={{ opacity: 0, scale: 0.8, y: 50 }}
-                animate={{ opacity: 1, scale: 1, y: 0 }}
-                exit={{ opacity: 0, scale: 0.8, y: 50 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
-              />
+              >
+                <PixelReveal src={view1} width={300} height={400} duration={2000}/>
+              </motion.div>
             )}
           </AnimatePresence>
         </div>
@@ -60,6 +65,7 @@ export function About() {
           </p>
         </div>
       </div>
+      
     </section>
   );
 }

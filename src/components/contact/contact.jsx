@@ -107,13 +107,11 @@ export function Contact() {
           <button type="submit">Send</button>
         </form>
 
-        <div style={{ width: "600px", height: "400px" }}>
+        {/* <div className = 'threed'>
           <Spline
             scene="https://prod.spline.design/f8jbXbWHeiEyWWnC/scene.splinecode" 
           />
-        </div>
-
-
+        </div> */}
 
       </div>
       

@@ -1,0 +1,48 @@
+.projects {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+.project-card {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-img {
+  width: 300px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.project-info {
+  text-align: left;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #0077ff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.project-link:hover {
+  color: #0056cc;
+}

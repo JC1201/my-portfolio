@@ -16,8 +16,11 @@ export function Skill() {
     <section className="skills">
         <h2>
             Tech Stack
-            <span class="info-icon" title="Hover over skills to see my level">ℹ️</span>
-
+            <span className="info-icon" >
+                ℹ️
+                <p>Hover over skills to see my level</p>
+            </span>
+            |
         </h2>
         <div className="skill-list">
         <div className="skill">

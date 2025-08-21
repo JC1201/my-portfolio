@@ -29,7 +29,9 @@
     border: white solid 0px;
     border-radius: 20px;
     max-width: 300px;
-    width: 100%;         /* full width */
+    height: 400px;  
+    width: 100%;   
+    
     margin: 2.5rem auto;   /* center horizontally */
     cursor: pointer;
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
@@ -44,20 +46,13 @@
     justify-content: center;
     text-align: center;
     background: transparent;
-    /* color: white; */
+    height: 100%;
+
     z-index: 1;
 }
 
-/* Animated photo */
-.about-card img,
-.about-card .photo {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    max-width: 300px;
-    object-fit: cover;
-    image-rendering: auto;
+.photo {
+
     border-radius: 20px;
 
 }
@@ -66,7 +61,6 @@
 
     max-width: 900px;
     margin: 1.5rem auto; /* center the content */
-    border-radius: 10px;
 
 }
 
