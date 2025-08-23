@@ -20,8 +20,7 @@ function App() {
     <>
 
     <Nav/>
-    
-
+  
     <section id="home">
       <Intro />
     </section>
