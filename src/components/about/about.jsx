@@ -7,10 +7,10 @@ import { PixelReveal } from "./pixelreveal.jsx";
 
 export function About() {
   const [showPic, setShowPic] = useState(false);
-  const [loaded, setLoaded] = useState(false);
+  // const [loaded, setLoaded] = useState(false);
 
   return (
-    <section className="abouts">
+    <section id = "about" className="abouts">
       <h2>About Me</h2>
 
       <div className="about">

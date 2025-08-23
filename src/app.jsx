@@ -9,6 +9,7 @@ import {About} from  './components/about/about.jsx';
 import {Experience} from  './components/experience/experience.jsx';
 import { Project } from './components/project/project.jsx';
 import {Contact} from  './components/contact/contact.jsx';
+import {Backtotop} from  './components/backtotop/backtotop.jsx';
 
 
 
@@ -17,14 +18,32 @@ function App() {
 
   return (
     <>
-
     <Nav/>
-    <Intro/>
-    <Skill/>
-    <About/>
-    <Experience/>
-    <Project/>
-    <Contact/>
+    <section id="home">
+      <Intro />
+    </section>
+
+    <section>
+      <About />
+    </section>
+
+    <section id="skill">
+      <Skill />
+    </section>
+
+    <section id="experience">
+      <Experience />
+    </section>
+
+    <section id="project">
+      <Project />
+    </section>
+
+    <section id="contact">
+      <Contact />
+    </section>
+
+    <Backtotop/>
     
     
     </>

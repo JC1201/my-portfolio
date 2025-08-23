@@ -8,7 +8,6 @@ import reactIcon from '../../assets/icons8-react.svg';
 import tensorflowIcon from '../../assets/icons8-tensorflow.svg';    
 
 
-
 export function Skill() {
 
   return (
