@@ -18,7 +18,10 @@ function App() {
 
   return (
     <>
+
     <Nav/>
+    
+
     <section id="home">
       <Intro />
     </section>
@@ -37,13 +40,15 @@ function App() {
 
     <section id="project">
       <Project />
+
     </section>
 
     <section id="contact">
-      <Contact />
+      <Contact/>
     </section>
 
     <Backtotop/>
+
     
     
     </>
