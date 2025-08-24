@@ -29,6 +29,7 @@ export function Sidebar() {
         href="mailto:jiehchengliew@gmail.com"
         // className="email"
       >
+        
         <img className="email" src={email} alt="email"  />
 
       </a>

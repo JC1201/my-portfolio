@@ -26,7 +26,9 @@
 }
 
 .sidebar a:hover {
-    /* transition: ; */
+
+    transform: translateY(-5px);
+    transition: transform 0.3s, background-color 0.3s;
 }
 
 .sidebar.email {

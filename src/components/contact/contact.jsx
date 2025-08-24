@@ -44,14 +44,30 @@ export function Contact() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
-        
-        e.preventDefault(); // stops page refresh
-        if (validate()) {
-            console.log("Form submitted:", formData);
-            alert("Message sent!");
-        }
-    };
+const handleSubmit = async (e) => {
+  e.preventDefault(); // prevent redirect
+
+  if (validate()) { // run your validation first
+    try {
+      const response = await fetch("https://formspree.io/f/xnnzrbyg", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert("Message sent!");
+        setFormData({ name: "", email: "", message: "" }); // reset form
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Failed to send message.");
+    }
+  }
+};
+
 
 
   return (
@@ -84,7 +100,7 @@ export function Contact() {
           <div className="form-group">
             <label>Email</label>
             <input
-              type="email"
+              // type="email"
               name="email"
               value={formData.email}
               onChange={handleChange}

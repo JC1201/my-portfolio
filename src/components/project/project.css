@@ -23,6 +23,11 @@
   transition: transform 0.3s ease;
 }
 
+/* .project-list :hover {
+  scale: 1.05;
+  box-shadow: "0px 10px 20px rgba(0,0,0,0.2)";
+} */
+
 .project-img {
   width: 300px;
   height: 220px;

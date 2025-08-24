@@ -22,13 +22,13 @@ function App() {
     <section id="home">
       <Intro />
     </section>
+    
+    <section id="skill">
+      <Skill />
+    </section>
 
     <section id="about">
       <About />
-    </section>
-
-    <section id="skill">
-      <Skill />
     </section>
 
     <section id="experience">

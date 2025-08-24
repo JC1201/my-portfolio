@@ -4,10 +4,11 @@
     align-items: center;     
     justify-content: center;  
     margin-top: 1rem;
+    margin-bottom: 10rem;
 }
 
 .skills h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: black;
     padding-right: 2rem;
 
