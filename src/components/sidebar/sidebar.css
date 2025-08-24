@@ -1,0 +1,35 @@
+.sidebar {
+    position: fixed;             /* float independently */
+    top: 50%;                    /* middle of screen */
+    right: 5px;                 /* right side */
+    transform: translateY(-50%); /* true vertical center */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* border: 3px #555 solid ; */
+    align-content: center;
+
+}
+
+.sidebar a {
+
+    width: 45px;
+    height: 45px;
+    /* background: black; */
+    /* color: white; */
+
+}
+
+.sidebar img {
+    height: 40px;
+    width: 40px;
+}
+
+.sidebar a:hover {
+    /* transition: ; */
+}
+
+.sidebar.email {
+    height: 35px;
+    width: 35px;
+}

@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { Nav } from './components/nav/nav.jsx';
 import {Intro} from  './components/intro/intro.jsx';
@@ -10,22 +8,22 @@ import {Experience} from  './components/experience/experience.jsx';
 import { Project } from './components/project/project.jsx';
 import {Contact} from  './components/contact/contact.jsx';
 import {Backtotop} from  './components/backtotop/backtotop.jsx';
+import {Sidebar} from  './components/sidebar/sidebar.jsx';
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
 
     <Nav/>
-  
+
     <section id="home">
       <Intro />
     </section>
 
-    <section>
+    <section id="about">
       <About />
     </section>
 
@@ -42,13 +40,14 @@ function App() {
 
     </section>
 
+    <Sidebar/>
+
     <section id="contact">
       <Contact/>
     </section>
 
     <Backtotop/>
 
-    
     
     </>
 
