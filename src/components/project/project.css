@@ -54,9 +54,34 @@
 }
 
 @media (max-width: 600px) {
+  .projects {
+    padding: 2rem 1rem; /* reduce spacing */
+  }
 
+  .project-list {
+    gap: 1.5rem;
+  }
 
-  .projects{
-    padding: 0;
+  .project-card {
+    flex-direction: column;     /* stack vertically */
+    align-items: center;        /* center content */
+    text-align: center;         /* center text */
+    padding: 1rem;
+  }
+
+  .project-img {
+    width: 100%;                /* responsive image */
+    max-width: 350px;           /* keep it contained */
+    height: 200px;               /* prevent squishing */
+  }
+
+  .project-info {
+    text-align: center;         /* center on mobile */
+    margin-top: 1rem;
+  }
+
+  .project-link {
+    margin-top: 0.8rem;
+    font-size: 0.95rem;
   }
 }

@@ -5,7 +5,6 @@
     padding: 2rem 0;
     color: black;
     margin-bottom: 10rem;
-
 }
 
 .timeline h2 {
@@ -48,23 +47,26 @@
 }
 
 /* Make it responsive for small screens */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+  .timeline {
+    max-width: 100%;       /* let it fit screen */
+    padding: 1rem;         /* small padding */
+  }
 
-.timeline {
-    max-width: 768px;
+  .timeline::before {
+    display: none;         /* hide center line */
+  }
+
+  .timeline h2 {
+    margin-bottom: 3rem;
+  }
+
+  .timeline-item {
+    position: relative;
+    left: unset !important;   /* remove forced offset */
+    width: 90%;               /* responsive width */
+    max-width: 400px;         /* limit so it’s not too wide */
+    margin: 1.5rem auto;      /* 🔥 centers horizontally */
+  }
 }
 
-.timeline::before {
-    left: 8px;
-}
-
-.timeline-item {
-    width: calc(100% - 70px); /* so it fits even with padding */
-    max-width: 100%; 
-    left: 0 !important;
-    margin-left: 20px;
-
-}
-
-
-}
