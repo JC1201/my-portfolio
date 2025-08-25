@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import "./project.css";
 import bombsweeper from '../../assets/bombsweeper.png';
 import TYP from '../../assets/TYP-Intelligent-Edge-Caching-Using-Federated-Learning-to-Predict-Content-Popularity.png';
@@ -25,10 +26,13 @@ const projects = [
   {
     title: "Weather App",
     description: "Fetches live weather data using OpenWeather API.",
-    image: bombsweeper,  // 👈 don't leave this as "" for now
+    image: bombsweeper,
     link: "https://github.com/yourname/weather-app"
   }
 ];
+
+const isMobile = window.innerWidth <= 600;
+
 
 export function Project() {
   return (
@@ -36,14 +40,14 @@ export function Project() {
       <h2>Projects</h2>
       <div className="project-list">
         {projects.map((p, i) => (
-          <ProjectCard key={i} project={p} />
+          <ProjectCard key={i} project={p} index={i} />
         ))}
       </div>
     </section>
   );
 }
 
-function ProjectCard({ project }) {
+function ProjectCard({ project, index }) {
   const [expanded, setExpanded] = useState(false);
   const MAX_LENGTH = 100;
 
@@ -53,7 +57,22 @@ function ProjectCard({ project }) {
       : project.description;
 
   return (
-    <div className="project-card">
+    <motion.div
+      className="project-card"
+      initial={{ x: isMobile ? -10 : -500, opacity: 0, scale: 0.8 }}
+      whileInView={{ x: 0, opacity: 1, scale: 1, rotate: 0 }}
+      viewport={{ once: true }}
+      transition={{
+        duration: 0.5,
+        ease: "backIn",
+        delay: index * 0.1
+      }}
+      whileHover={{
+        scale: 1.05,
+        boxShadow: "0px 10px 20px rgba(0,0,0,0.2)",
+        transition: { duration: 0.1, ease: "easeOut" }
+      }}
+    >
       {project.image && (
         <img src={project.image} alt={project.title} className="project-img" />
       )}
@@ -61,23 +80,17 @@ function ProjectCard({ project }) {
         <h3>{project.title}</h3>
         <p>
           {expanded ? project.description : shortText}
-          
-
           {project.description.length > MAX_LENGTH && (
             <>
-            &nbsp;
-            &nbsp;
-
-          <button
-            className="read-more-btn"
-            onClick={() => setExpanded(!expanded)}
-          >
-          
-          {expanded ? "Read less" : "Read more"}
-          </button>
-          </>
-        )}
-
+              &nbsp;&nbsp;
+              <button
+                className="read-more-btn"
+                onClick={() => setExpanded(!expanded)}
+              >
+                {expanded ? "Read less" : "Read more"}
+              </button>
+            </>
+          )}
         </p>
         <a
           href={project.link}
@@ -88,6 +101,6 @@ function ProjectCard({ project }) {
           View Project →
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 }

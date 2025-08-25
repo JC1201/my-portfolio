@@ -117,21 +117,20 @@
 
 /* Mobile */
 @media (max-width: 600px) {
-    .skill-list {
-        gap: 0.1rem;
+
+    .skills {
+        padding: 0;
     }
+
     .skill {
-        /* width: 70px; */
         padding: 0.3rem;
     }
     .skill img {
         width: 30px;
         height: 30px;
     }
-    .skill span {
-        font-size: 0.7rem;
-    }
-    .skill .level {
-        font-size: 0.65rem;
+
+    .skill-list {
+        gap: 0.2rem;
     }
 }
