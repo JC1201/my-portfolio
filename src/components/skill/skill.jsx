@@ -19,7 +19,7 @@ export function Skill() {
                 ℹ️
                 <p>Hover over skills to see my level</p>
             </span>
-            |
+            
         </h2>
         <div className="skill-list">
         <div className="skill">

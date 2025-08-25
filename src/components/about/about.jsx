@@ -5,6 +5,16 @@ import { motion, AnimatePresence } from "framer-motion";
 import { PixelReveal } from "./pixelreveal.jsx";
 import Animatedcontent from "./Animatedcontent.jsx"; // 👈 your scroll animation wrapper
 
+// function highlightText(text, highlights) {
+//   return text.split(" ").map((word, i) => {
+//     const cleanWord = word.replace(/[.,!]/g, ""); // remove punctuation for matching
+//     if (highlights.includes(cleanWord)) {
+//       return <ShinyText key={i}>{word} </ShinyText>;
+//     }
+//     return word + " ";
+//   });
+// }
+
 export function About() {
   const [showPic, setShowPic] = useState(false);
 

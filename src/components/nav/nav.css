@@ -11,9 +11,10 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    /* z-index: 1000; */
     background-color: white; /* optional: so text doesn't overlap intro */
     box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* subtle shadow */
+    /* margin: 0 100px; */
 }
 
 .nav ul {
@@ -42,7 +43,7 @@ a:hover {
 
 /* ---------- Tablet View (600px–1024px) ---------- */
 @media (max-width: 1024px) and (min-width: 601px) {
-    .nav {
+    /* .nav {
         justify-content: space-between;
         padding: 0 2rem;
     }
@@ -53,7 +54,7 @@ a:hover {
 
     a {
         font-size: 1.1em;
-    }
+    } */
 }
 
 
@@ -61,7 +62,6 @@ a:hover {
 @media (max-width: 600px) {
 
 .nav {
-    /* padding: 0 1rem; */
     justify-content: space-between;
 }
 
@@ -96,7 +96,7 @@ a:hover {
 
 .logo {
     font-weight: bold; 
-    margin-left: 2rem;
+    margin-left: 3rem;
 }
 
 .hamburger { 
@@ -105,7 +105,7 @@ a:hover {
     font-size: 1.5rem;
     z-index: 1000;
     right: 0;
-    margin-right: 2rem;
+    margin-right: 3rem;
 }
 
 .hamburger span {

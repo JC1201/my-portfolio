@@ -118,10 +118,10 @@
 /* Mobile */
 @media (max-width: 600px) {
     .skill-list {
-        gap: 0.5rem;
+        gap: 0.1rem;
     }
     .skill {
-        width: 70px;
+        /* width: 70px; */
         padding: 0.3rem;
     }
     .skill img {

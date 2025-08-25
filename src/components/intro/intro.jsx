@@ -16,9 +16,9 @@ export function Intro() {
         <div className="intro-desc">
           <div className="intro-text">
             <h1>
-              Hello, I'm <span>Jieh Cheng</span> 👋
-            </h1>
+               Hello, I'm Jieh Cheng 👋
 
+            </h1>             
             <p className="typing-text">
               {introText.split("").map((char, index) => (
                 <motion.span

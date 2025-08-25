@@ -22,6 +22,9 @@ function App() {
     <section id="home">
       <Intro />
     </section>
+
+    <Sidebar/>
+
     
     <section id="skill">
       <Skill />
@@ -40,7 +43,6 @@ function App() {
 
     </section>
 
-    <Sidebar/>
 
     <section id="contact">
       <Contact/>

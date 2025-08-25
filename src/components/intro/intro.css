@@ -1,15 +1,14 @@
 .intro{
-
     margin-bottom: 90px;
 }
 
 
 .intro-content {
 
-    margin: 0 auto;/* horizontally center */
     display: flex;       /* for image + text side by side */
     gap: 2rem;           /* optional spacing between columns */
     align-items: center; /* vertically align image + text */
+    justify-content: center;
     padding-top: 11rem;    
 }
 
@@ -46,8 +45,10 @@
 
 @media (max-width: 1024px) and (min-width: 601px) {
     .intro {
+        display: flex;
         flex-direction: column; /* stack items vertically */
-        align-items: center; /* center items */
+
+        
     }
     
     .intro-image img {
@@ -63,12 +64,26 @@
 @media (max-width: 600px) {
 
     .intro {
-        display: flex;
-        flex-direction: column;
+        /* display: flex; */
         align-items: center; 
         justify-content: center;
-        width: 100%; /* full width on mobile */
-        gap: 0.5rem; /* smaller gap on mobile */
+         
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    .intro-content{
+
+
+        display:  flex;
+        flex-wrap: wrap;
+        align-items: center; 
+        justify-content: center;
+        text-align: center;
+
+        gap: 1rem;
+        padding-top: 12rem;    
+
 
     }
     
@@ -78,7 +93,7 @@
     }
 
     .intro-text h1{
-        font-size: 2.3rem; 
+        font-size: 2rem; 
         /* smaller heading on mobile */
     }
 
@@ -88,24 +103,9 @@
         height: 200px;
     }
 
-    .about{
-        max-width: 500px;
-        gap: 0.5rem; /* smaller gap on mobile */
-
-    }
-
-    .about-card {
-        height: 300px;
-        width: 100%; 
-    }
-    
-    .about-card img {
-        width: 100%; /* full width image on mobile */
-        height: 100%; /* maintain aspect ratio */
-
-        padding: 0;
-        margin: 0;
-        object-fit: cover;
+    .typing-text {
+        /* font-size: px; */
+        padding: 0 100px;
     }
 
 }
