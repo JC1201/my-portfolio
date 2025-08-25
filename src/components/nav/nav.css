@@ -11,10 +11,9 @@
     top: 0;
     left: 0;
     right: 0;
-    /* z-index: 1000; */
+    z-index: 1000;
     background-color: white; /* optional: so text doesn't overlap intro */
     box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* subtle shadow */
-    /* margin: 0 100px; */
 }
 
 .nav ul {
@@ -86,6 +85,7 @@ a:hover {
 
 .nav ul.active {
     display: flex;
+
 }
 
 .nav ul li { 

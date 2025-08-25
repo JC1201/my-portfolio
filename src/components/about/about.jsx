@@ -69,11 +69,13 @@ export function About() {
               experience, I bring enthusiasm, adaptability, and a strong
               willingness to learn.
             </p>
+
             <p>
               I thrive on challenges and enjoy learning new technologies to
               enhance my projects. My goal is to build software that not only
               meets user needs but also provides an exceptional user experience.
             </p>
+            
             <p>
               When I'm not coding, I love exploring new tech trends, contributing
               to open-source projects, and sharing knowledge with the developer
