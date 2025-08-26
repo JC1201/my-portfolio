@@ -90,7 +90,7 @@ Spline {
 @media (max-width: 600px) {
 
     .contact {
-        padding: 2rem 5rem 5rem; /* reduce spacing */
+        padding: 2rem 2rem 5rem; /* reduce spacing */
 
     }
 }

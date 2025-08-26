@@ -25,6 +25,20 @@
     transform: translateX(-50%);
 }
 
+.timeline-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.timeline-icon {
+  width: 40px;   /* adjust size */
+  height: 40px;  /* keep square */
+  object-fit: contain; /* ensures logo keeps aspect ratio */
+  border-radius: 8px;  /* optional rounded style */
+}
+
+
 /* Common item style */
 .timeline-item {
     position: relative;
@@ -47,6 +61,7 @@
 }
 
 @media (max-width: 1024px) and (min-width: 601px) {
+  
   .timeline {
     max-width: 100%;
     padding: 2rem;

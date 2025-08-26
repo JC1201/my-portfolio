@@ -1,12 +1,37 @@
 import { motion } from "framer-motion";
 import "./experience.css";
+import lancsunilogo from '../../assets/lancsunilogo.svg';
+import lancomelogo from '../../assets/lancomelogo.jpg';
+import powerhouselogo from '../../assets/powerhouselogo.png';
+
+
 
 export function Experience() {
   const experiences = [
-    { year: "2016 - 2020", title: "Chong Hwa Independent High School", desc: "High School Diploma" },
-    { year: "2018 - 2020", title: "Foundation in Science", desc: "" },
-    { year: "2020 - 2023", title: "Bachelor's Degree in Computer Science", desc: "" },
-    { year: "2023 - Present", title: "Master's Degree in AI", desc: "" },
+    { 
+      year: "Jan 2023  -  Feb 2023", 
+      title: "Lancome", 
+      desc: "Event Crew", 
+      icon: lancomelogo
+    },
+    { 
+      year: "Oct 2023 - Jul 2025", 
+      title: "Lancaster University", 
+      desc: "Bachelor's Degree in Computer Science", 
+      icon: lancsunilogo
+    },
+    { 
+      year: "June 2024 - Aug 2024", 
+      title: "Power House Marketing ", 
+      desc: "Junior Database Administrator", 
+      icon: powerhouselogo
+    },
+    { 
+      year: "June 2025 - Oct 2025", 
+      title: "Lancaster University", 
+      desc: "Conference Assistant", 
+      icon: lancsunilogo
+    },
   ];
 
   return (
@@ -21,6 +46,12 @@ export function Experience() {
           transition={{ duration: 0.5, delay: index * 0.3 }}
           viewport={{ once: true }}
         >
+          <div className="timeline-header">
+            {item.icon && (
+              <img src={item.icon} alt={item.title} className="timeline-icon" />
+            )}
+          </div>
+
           <h3>{item.year}</h3>
           <p>{item.title}</p>
           {item.desc && <p>{item.desc}</p>}
