@@ -59,7 +59,7 @@ function ProjectCard({ project, index }) {
   return (
     <motion.div
       className="project-card"
-      initial={{ x: isMobile ? -10 : -500, opacity: 0, scale: 0.8 }}
+      initial={{ x: isMobile ? -10 : -50, opacity: 0, scale: 0.8 }}
       whileInView={{ x: 0, opacity: 1, scale: 1, rotate: 0 }}
       viewport={{ once: true }}
       transition={{

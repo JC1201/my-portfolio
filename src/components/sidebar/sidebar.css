@@ -36,6 +36,24 @@
     width: 35px;
 }
 
+@media (max-width: 1024px) and (min-width: 601px) {
+
+    .sidebar {
+        left: 0;
+        right: 0;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        margin: 0 auto;
+        padding: 0;
+        gap: 0px;
+    }
+
+
+}
+
 @media (max-width: 600px) {
 
     .sidebar {
@@ -51,6 +69,6 @@
         gap: 0px;
     }
 
-    
+
 
 }

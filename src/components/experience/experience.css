@@ -46,11 +46,33 @@
     left: 53%;
 }
 
+@media (max-width: 1024px) and (min-width: 601px) {
+  .timeline {
+    max-width: 100%;
+    padding: 2rem;
+    margin: 0;
+  }
+
+  .timeline::before {
+    display: none; /* hide the vertical line */
+  }
+
+  .timeline-item {
+    width: 90%;
+    max-width: 600px;
+    margin: 2rem auto;   /* ✅ centers horizontally */
+    left: auto !important;  /* ✅ override odd/even left values */
+    right: auto !important; /* just in case */
+  }
+}
+
+
 /* Make it responsive for small screens */
 @media (max-width: 600px) {
+
   .timeline {
     max-width: 100%;       /* let it fit screen */
-    padding: 1rem;         /* small padding */
+    padding: 1rem 2.4rem;         /* small padding */
   }
 
   .timeline::before {

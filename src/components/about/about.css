@@ -76,6 +76,21 @@
     flex-direction: column;
 }
 
+@media (max-width: 1024px) and (min-width: 601px) {
+
+    .about {
+        flex-direction: column;       /* stack instead of row */
+        align-items: center;          /* center items horizontally */
+        gap: 2rem;                    /* reduce spacing */
+        margin-bottom: 5rem;
+    }
+
+    .about-content {
+        margin-top: 0;
+    }
+
+}
+
 /* Mobile view */
 @media (max-width: 600px) {
 
@@ -99,7 +114,7 @@
 
   .about-content {
         padding: 0;
-        margin: 0 1rem;            
+        margin: 0 2.4rem;            
         max-width: 100%;              /* allow full width on phone */
         min-width: 300px;
         max-width: 400px;

@@ -102,8 +102,10 @@
 
 /* Tablet */
 @media (max-width: 1024px) and (min-width: 601px) {
+
+
     .skill {
-        width: 90px;
+        /* width: 90px; */
         padding: 0.4rem;
     }
     .skill img {
@@ -120,6 +122,7 @@
 
     .skills {
         padding: 0;
+        flex-direction: column;
     }
 
     .skill {

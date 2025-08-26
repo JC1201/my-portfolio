@@ -64,23 +64,53 @@
   text-decoration: underline;
 }
 
+/* Tablet view */
 @media (max-width: 1024px) and (min-width: 601px) {
 
   .projects {
-    /* padding: 2rem 5rem; reduce spacing */
+      /* padding: 3rem 2rem 6rem; */
+      margin: 0 2rem;
+  }
 
+  .project-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+      gap: 2rem; /* space between cards */
+      max-width: 1000px;
+      margin: 0 auto;
+      
   }
 
   .project-card {
-    max-width: 600px;
+      flex-direction: column; /* stack image on top of text */
+      padding: 1rem;
+  }
+
+  .project-img {
+      width: 100%;
+      height: auto; /* maintain aspect ratio */
+      max-height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+  }
+
+  .project-info {
+      text-align: center;
+  }
+
+  .project-link {
+      display: inline-block;
+      margin-top: 0.5rem;
   }
 }
+
 
 @media (max-width: 600px) {
 
 
     .projects {
-      padding: 2rem 5rem; /* reduce spacing */
+      padding: 2rem 2.4rem; /* reduce spacing */
     }
 
     .projects {

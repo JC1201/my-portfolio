@@ -78,6 +78,15 @@ Spline {
     background: transparent !important;
 } */
 
+@media (max-width: 1024px) and (min-width: 601px) {
+    
+  .contact {
+      padding: 3rem 2rem;
+      min-width: 500px;
+      max-width: 700px;
+  }
+}
+
 @media (max-width: 600px) {
 
     .contact {

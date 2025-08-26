@@ -44,22 +44,38 @@
 
 
 @media (max-width: 1024px) and (min-width: 601px) {
-    .intro {
-        display: flex;
-        flex-direction: column; /* stack items vertically */
 
-        
-    }
-    
-    .intro-image img {
-        width: 200px; /* smaller image on tablet */
-        height: 200px;
-    }
+  .intro {
+      padding-top: 6rem; /* less than desktop */
+  }
 
-    .about {
-        max-width: 600px; /* adjust width for tablet */
-    }
+  .intro-content {
+      flex-direction: column; /* stack image + text vertically */
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+  }
+
+  .intro-image img {
+      width: 200px;
+      height: 200px;
+  }
+
+  .intro-text h1 {
+      font-size: 2rem;
+  }
+
+  .intro-text p.typing-text {
+      font-size: 1rem;
+  }
+
+  .intro a {
+      margin-top: 1.5rem;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+  }
 }
+
 
 @media (max-width: 600px) {
 
@@ -93,7 +109,7 @@
     }
 
     .intro-text h1{
-        font-size: 2rem; 
+        font-size: 1.6rem; 
         /* smaller heading on mobile */
     }
 
