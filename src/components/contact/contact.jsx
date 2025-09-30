@@ -68,8 +68,6 @@ const handleSubmit = async (e) => {
   }
 };
 
-
-
   return (
 
     <section className="contact">
