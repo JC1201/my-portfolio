@@ -21,7 +21,7 @@
   padding: 1.5rem;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
-  /* max-width: 1000px; */
+  max-width: 900px;
 }
 
 .project-img {
@@ -60,7 +60,7 @@
 }
 
 .read-more-btn:hover {
-  color: #0056cc;
+  background-color: white;
   text-decoration: underline;
 }
 

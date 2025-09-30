@@ -18,17 +18,23 @@ const projects = [
     link: "https://github.com/JC1201/Intelligent-Edge-Caching-Using-Federated-Learning-to-Predict-Content-Popularity"
   },
   {
-    title: "Todo App",
-    description: "A simple and elegant todo list with local storage and animations.",
+    title: "Day Counter App",
+    description: "App to record day counter for events which allow multiple collaborators to edit the event.",
     image: bombsweeper,
     link: "https://github.com/yourname/todo-app"
   },
-  {
-    title: "Weather App",
-    description: "Fetches live weather data using OpenWeather API.",
-    image: bombsweeper,
-    link: "https://github.com/yourname/weather-app"
-  }
+  // {
+  //   title: "Todo App",
+  //   description: "A simple and elegant todo list with local storage and animations.",
+  //   image: bombsweeper,
+  //   link: "https://github.com/yourname/todo-app"
+  // },
+  // {
+  //   title: "Weather App",
+  //   description: "Fetches live weather data using OpenWeather API.",
+  //   image: bombsweeper,
+  //   link: "https://github.com/yourname/weather-app"
+  // }
 ];
 
 const isMobile = window.innerWidth <= 600;
