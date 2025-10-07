@@ -1,4 +1,4 @@
-import './App.css'
+import './app.css'
 import { Nav } from './components/nav/nav.jsx';
 import {Intro} from  './components/intro/intro.jsx';
 import {Skill} from  './components/skill/skill.jsx';
