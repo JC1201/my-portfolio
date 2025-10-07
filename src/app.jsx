@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import { Nav } from './components/nav/nav.jsx';
 import {Intro} from  './components/intro/intro.jsx';
@@ -9,7 +8,6 @@ import { Project } from './components/project/project.jsx';
 import {Contact} from  './components/contact/contact.jsx';
 import {Backtotop} from  './components/backtotop/backtotop.jsx';
 import {Sidebar} from  './components/sidebar/sidebar.jsx';
-
 
 
 function App() {
@@ -49,7 +47,6 @@ function App() {
     </section>
 
     <Backtotop/>
-
     
     </>
 
