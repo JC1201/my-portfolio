@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import "./project.css";
 import bombsweeper from '../../assets/bombsweeper.png';
 import TYP from '../../assets/TYP-Intelligent-Edge-Caching-Using-Federated-Learning-to-Predict-Content-Popularity.png';
+import daycounter from '../../assets/day-counter-app.png';
 
 const projects = [
   {
@@ -20,8 +21,8 @@ const projects = [
   {
     title: "Day Counter App",
     description: "App to record day counter for events which allow multiple collaborators to edit the event.",
-    image: bombsweeper,
-    link: "https://github.com/yourname/todo-app"
+    image: daycounter,
+    link: "https://github.com/yourname/day-counter-app"
   },
   // {
   //   title: "Todo App",
